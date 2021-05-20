@@ -20,7 +20,7 @@ export function DestinationCard(destination) {
       <div class="mt-4">
         <a
           href="#"
-          class="text-indigo-600 hover:text-indigo-500 font-semibold text-sm"
+          class="text-brand-dark hover:text-brand font-semibold text-sm"
         >
           Explore ${destination.propertyCount} properties
         </a>

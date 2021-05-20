@@ -50,12 +50,12 @@
   }
 
   .btn-primary {
-    @apply bg-indigo-500
-    hover:bg-indigo-400
+    @apply bg-brand
+    hover:bg-brand-light
     
-    focus:ring-indigo-500
+    focus:ring-brand
     focus:ring-opacity-50
-    active:bg-indigo-600
+    active:bg-brand-dark
     text-white;
   }
 
