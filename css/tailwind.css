@@ -2,6 +2,70 @@
   color: red;
 }
 
+/* @tailwind base;
+@tailwind components;
+.btn {
+  @apply inline-block
+  bg-indigo-500
+  hover:bg-indigo-400
+  hover:-translate-y-0.5
+  transform
+  transition
+  focus:outline-none
+  focus:ring
+  focus:ring-offset-2
+  focus:ring-indigo-500
+  focus:ring-opacity-50
+  active:bg-indigo-600
+  text-white
+  py-3
+  px-5
+  rounded-lg
+  shadow-lg
+  uppercase
+  font-semibold
+  tracking-wider text-sm sm:text-base;
+}
+@tailwind utilities; */
+
 @tailwind base;
 @tailwind components;
+
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-block
+    py-3
+    px-5
+    rounded-lg
+    focus:outline-none
+    focus:ring
+    focus:ring-offset-2    
+    uppercase
+    font-semibold
+    tracking-wider
+    text-sm
+    sm:text-base;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-500
+    hover:bg-indigo-400
+    
+    focus:ring-indigo-500
+    focus:ring-opacity-50
+    active:bg-indigo-600
+    text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-300
+    hover:bg-gray-200
+    
+    focus:ring-gray-300
+    focus:ring-opacity-50
+    active:bg-gray-400
+    text-gray-800;
+  }
+}
