@@ -68,4 +68,20 @@
     active:bg-gray-400
     text-gray-800;
   }
+  .create-story {
+    @apply absolute
+          bottom-0
+          right-1
+          bg-brand
+          hover:bg-brand-dark
+          h-8
+          w-8
+          text-white text-2xl
+          font-semibold
+          border-4 border-white
+          rounded-full
+          flex
+          justify-center
+          items-center;
+  }
 }
