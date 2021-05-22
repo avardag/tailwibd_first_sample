@@ -45,3 +45,19 @@ add to index.html
 9-
 npm run dev
 to run the dev server by "vite"
+
+10-
+forms plugin:
+  npm install @tailwindcss/forms
+in config file :
+   plugins: [
+    require("@tailwindcss/forms")
+  ],
+to customize forms plugin , customize the tailwnd.css file. apply custom styles to base layer
+ @layer base {
+  "[type='text']",
+  "[type='email']"{
+    padding-left: 20px;
+    @apply rounded-lg
+
+  }

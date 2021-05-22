@@ -33,6 +33,40 @@
 
 @tailwind utilities;
 
+/* customizing forms plugin */
+@layer base {
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    /* border-radius: theme("borderRadius.lg") */
+    @apply w-full
+          border-gray-300
+          rounded-lg
+          shadow-sm
+          focus:border-brand
+          focus:ring-brand;
+  }
+  [type="checkbox"],
+  [type="radio"] {
+    @apply rounded
+          border-gray-300
+          text-brand
+          focus:ring-brand-dark;
+  }
+}
+
 @layer components {
   .btn {
     @apply inline-block

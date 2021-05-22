@@ -29,7 +29,7 @@ module.exports = {
       // fontSize:['hover'] // enable change of font size on hover
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
 
 /**  */

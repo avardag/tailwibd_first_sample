@@ -231,6 +231,94 @@
         </li>
       </ul>
     </div>
-    <script src="main.js" type="module"></script>
+    <!-- FORM -->
+    <section class="form py-8 bg-gray-200">
+      <div class="login-form">
+        <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+          <div class="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+            <form action="#" class="mb-0 space-y-6" method="POST">
+              <!-- email input -->
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700"
+                  >Email Address</label
+                >
+                <div class="mt-1">
+                  <input
+                    class=""
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- password input -->
+              <div>
+                <label
+                  for="password"
+                  class="block text-sm font-medium text-gray-700"
+                  >Password</label
+                >
+                <div class="mt-1">
+                  <input
+                    class=""
+                    type="password"
+                    id="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- select elements -->
+              <div>
+                <label
+                  for="company-size"
+                  class="block text-sm font-medium text-gray-700"
+                  >Company Size</label
+                >
+                <div class="mt-1">
+                  <select name="company-size" id="company-size" class="">
+                    <option value="">Please select</option>
+                    <option value="small">1 to 10 employees</option>
+                    <option value="medium">11 to 50 employees</option>
+                    <option value="large">50+ employees</option>
+                  </select>
+                </div>
+              </div>
+              <!-- checkbox -->
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="terms-and-privacy"
+                  id="terms-and-privacy"
+                  class="h-4 w-4"
+                />
+                <label
+                  for="terms-and-privacy"
+                  class="ml-2 block text-sm text-gray-900"
+                  >I agree to the
+                  <a href="#" class="text-brand hover:text-brand-light">
+                    terms</a
+                  >
+                  and
+                  <a href="#" class="text-brand hover:text-brand-light"
+                    >Privacy Policy</a
+                  >
+                </label>
+              </div>
+              <!--  submit button -->
+              <button class="btn btn-primary w-full text-center">
+                Sign Up
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js" type="module"></script>
   </body>
 </html>
