@@ -61,3 +61,25 @@ to customize forms plugin , customize the tailwnd.css file. apply custom styles 
     @apply rounded-lg
 
   }
+
+11-
+PRODUCTION BUILD
+add script in package.json
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+
+purge unused CSS :
+  // tailwind.config.js
+    module.exports = {
+      purge: [
+        './index.html',
+        './main.js'
+        './src/**/*.html',
+        './src/**/*.jsx',
+      ],
+      theme: {},
+      variants: {},
+      plugins: [],
+    }

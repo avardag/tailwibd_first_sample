@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./index.html', './main.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     //for extending tailwinds default colors, font sizes, spacing scales etc.
